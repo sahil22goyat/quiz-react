@@ -1,4 +1,3 @@
-
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Question from "./Components/Question";
@@ -49,9 +48,17 @@ class App extends Component {
         }
     };
 
+    restartQuiz = () => {
+        this.setState({
+            currentQuestion: 0,
+            selectedOption: "",
+            score: 0,
+            quizEnd: false,
+        });
+    };
+
     render() {
-        const { questionBank, currentQuestion, selectedOption, score, quizEnd } =
-            this.state;
+        const { questionBank, currentQuestion, selectedOption, score, quizEnd } = this.state;
         return (
             <div className="App d-flex flex-column align-items-center justify-content-center">
                 <h1 className="app-title">QUIZ APP</h1>
@@ -66,7 +73,7 @@ class App extends Component {
                     <Score
                         score={score}
                         onNextQuestion={this.handleNextQuestion}
-                        className="score"
+                        onRestart={this.restartQuiz} // Pass restart function to Score component
                     />
                 )}
             </div>

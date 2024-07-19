@@ -1,4 +1,3 @@
-
 const qBank = [
     {
         id: 1,
@@ -20,16 +19,46 @@ const qBank = [
     },
     {
         id: 4,
-        question: "What is the capital of Uttarakhad?",
-        options: ["Roorkee", "Haridwar", "Dehradun", "Nanital"],
+        question: "What is the capital of Uttarakhand?",
+        options: ["Roorkee", "Haridwar", "Dehradun", "Nainital"],
         answer: "Dehradun"
     },
     {
         id: 5,
-        question: "What is capital of Uttar Pradesh?",
+        question: "What is the capital of Uttar Pradesh?",
         options: ["GB Nagar", "Lucknow", "Prayagraj", "Agra"],
         answer: "Lucknow"
     },
-]
+    {
+        id: 6,
+        question: "What is the capital of Australia?",
+        options: ["Sydney", "Melbourne", "Canberra", "Perth"],
+        answer: "Canberra"
+    },
+    {
+        id: 7,
+        question: "Which planet is known as the Red Planet?",
+        options: ["Mars", "Jupiter", "Saturn", "Mercury"],
+        answer: "Mars"
+    },
+    {
+        id: 8,
+        question: "Who painted the Mona Lisa?",
+        options: ["Leonardo da Vinci", "Pablo Picasso", "Vincent van Gogh", "Michelangelo"],
+        answer: "Leonardo da Vinci"
+    },
+    {
+        id: 9,
+        question: "Which country is known as the Land of the Rising Sun?",
+        options: ["China", "Japan", "Korea", "Thailand"],
+        answer: "Japan"
+    },
+    {
+        id: 10,
+        question: "What is the largest mammal in the world?",
+        options: ["Elephant", "Blue whale", "Giraffe", "Hippopotamus"],
+        answer: "Blue whale"
+    }
+];
 
 export default qBank;
